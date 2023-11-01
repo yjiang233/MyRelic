@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "myrrelic",
+  "version": "${version}",
+  "name": "MyrRelic",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/yjiang233/MyrRelic"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/myrrelic/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.yjcreate.myrrelic.client.MyrRelicClient"
+    ],
+    "main": [
+      "com.yjcreate.myrrelic.MyrRelic"
+    ]
+  },
+  "mixins": [
+    "myrrelic.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
